@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://fcv463f6qred"]
+
+[ext_resource type="Script" uid="uid://buv3q1as0foct" path="res://Menus/loading_screen.gd" id="1_xcbcs"]
+[ext_resource type="Texture2D" uid="uid://di4c2uqukva7b" path="res://assets/ArchNord.png" id="2_mcw6h"]
+
+[node name="LoadingScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xcbcs")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_mcw6h")
+expand_mode = 3
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -187.0
+offset_top = -125.0
+offset_right = 187.0
+offset_bottom = -98.0
+grow_horizontal = 2
+grow_vertical = 0
